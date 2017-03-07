@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+.button {
+	border-radius: 3px;
+	background-color: lightblue;
+}
+
+.callout {
+	border-radius: 5px;
+	opacity: 0.93;
+	margin: 0 auto;
+}
+
+.width {
+	width: 500px;
+}
+
+table {
+	width: 370px;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+.index {
+	padding: 8px;
+	font-size: 10px;
+	color: #666;
+}
+
+.title {
+	width: 150px;
+}
+
+body {
+	background-image: url(space.jpg);
+	background-size: cover;
+}
+
+.x {
+	font-size: 17px;
+}
+
+.x:hover {
+	font-weight: bold;
+	background-color: white;
+	color: #666;
+	font-size: 16px;
+}
+
+.button {
+	margin: 0;
+}
+
+p {
+	font-size: 15px;
+}
+
+.title_link {
+	font-size: 15px;
+}
+
+.title_link:hover {
+	background-color: white;
+	color: black;
+	text-decoration: underline;
+}
+
+.input-group-button {
+	float: left;
+}
+
+.down_btn {
+	margin-top: 50px;
+	margin-left: -13px;
+}
+
+.left {
+	margin-left: 5px;
+}
+.pass {
+	margin-bottom: -20px;
+}
+.edit_left {
+	margin-left: 0;
+}

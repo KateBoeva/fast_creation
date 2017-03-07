@@ -1,0 +1,12 @@
+.callout.primary.large
+ p#notice = notice
+
+ p
+   h1 = @page.title
+   h6 = @page.created_at
+ p
+   = raw @page.article
+
+ = link_to 'Edit', edit_page_path(@page), class: 'button'
+ '
+ = link_to 'Back', pages_path, class: 'button'

@@ -1,0 +1,16 @@
+.callout.primary.large.width
+  h1 Listing pages
+
+  .row
+    .medium-4.columns
+      table.unstriped 
+        tbody
+          - @pages.each do |page|
+            tr
+              td = link_to page.title, page, class: 'title_link'
+              td = link_to 'Edit', edit_page_path(page), class: 'button index'
+              td = link_to '×', page, data: { confirm: 'Are you sure?' }, method: :delete, class: 'x'
+
+  br
+
+  = link_to 'New Page', new_page_path, class: 'button'

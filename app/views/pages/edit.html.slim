@@ -1,0 +1,12 @@
+.callout.primary.large
+ h1 Editing page
+
+ == render 'form'
+
+ = form_for @page do |f|
+  = f.text_field :password, placeholder: 'Enter password...', class: 'pass'
+
+ = link_to 'Show', @page, class: 'button down_btn edit_left'
+ '
+ = link_to 'Back', pages_path, class: 'button down_btn left edit_left'
+
